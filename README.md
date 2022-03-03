@@ -16,7 +16,7 @@
  ####3. apache camel, activemq, jbossfuse
  
  ####4. activemq 환경설정 
- 
+ activeMQ 클래식으로 설치해서 실습 
  #####users.properties 
  파일에 사용자 
  
@@ -25,7 +25,7 @@
 <transportConnectors>
             <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
             <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
-            
+            실습에 사용안하는 기능 주석처리 
         <!--<transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
             <transportConnector name="stomp" uri="stomp://0.0.0.0:61613?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
             <transportConnector name="mqtt" uri="mqtt://0.0.0.0:1883?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
